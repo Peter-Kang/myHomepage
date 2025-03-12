@@ -54,7 +54,7 @@
 - League:
     - NA OP GG:
         - abbr: OP
-          href: https://www.op.gg/summoners/na/peterchan-NA1
+          href: https://www.op.gg/summoners/na/{{HOMEPAGE_VAR_RIOT_SUMMONER_ID}}
     - League of Graphs:
         - abbr: LOG
-          href: https://www.leagueofgraphs.com/summoner/na/peterchan-NA1
+          href: https://www.leagueofgraphs.com/summoner/na/{{HOMEPAGE_VAR_RIOT_SUMMONER_ID}}
