@@ -1,0 +1,22 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings
+title: Oak Homepage
+
+providers:
+  finnhub: csulvnpr01qgo8ni7rg0csulvnpr01qgo8ni7rgg
+
+color: sky 
+#slate, gray, zinc, neutral, stone, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose, red, white
+theme: dark # or light
+
+layout:
+  
+  Dailies:
+    style: row
+    columns: 3
+  Reps:
+    style: row
+  Self Hosted:
+    style: row
+    columns: 3

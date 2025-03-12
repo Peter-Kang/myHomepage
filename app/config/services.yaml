@@ -1,0 +1,119 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+
+- Dailies:
+    - Calendar:
+        icon: nextcloud-calendar.svg
+        widget:
+            type: calendar
+            firstDayInWeek: sunday # optional - defaults to monday
+            view: monthly # optional - possible values monthly, agenda
+            maxEvents: 10 # optional - defaults to 10
+            showTime: false # optional - show time for event happening today - defaults to false
+            timezone: America/New_York # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+            previousDays: 0 # optional - shows events since three days ago - defaults to 0
+            integrations: # same as in Monthly view example
+                - type: ical # Show calendar events from another service
+                  url: {{HOMEPAGE_VAR_DALLIES_MEETING_WITH_PEOPLE}}
+                  name: Meeting with People # required - name for these calendar events
+                  color: sky # optional - defaults to pre-defined color for the service (zinc for ical)
+                  params: # optional - additional params for the service
+                  showName: true # optional - show name before event title in event line - defaults to false
+                - type: ical # Show calendar events from another service
+                  url: {{HOMEPAGE_VAR_DALLIES_HAPPY_EARTH_TEA_TIME}}
+                  name: Happy Earth Tea # required - name for these calendar events
+                  color: lime # optional - defaults to pre-defined color for the service (zinc for ical)
+                  params: # optional - additional params for the service
+                  showName: true # optional - show name before event title in event line - defaults to false             
+    - Spotify:
+        icon: spotify.svg
+        widget:
+          type: iframe
+          name: Spotify
+          src: https://open.spotify.com/embed/show/7nc7OQdPTekErtFSRxOBKh?utm_source=generator
+    - Duolingo:
+        icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxC65R4jDKUycDPbrJoFiKG_DfemMdd1CKA&s
+        href: https://www.duolingo.com/learn
+        widget:
+          type: iframe
+          name: Duolingo
+          src: https://duolingo-stats-card.vercel.app/api?username=PeterKang394674&theme=leafy&sort=xp
+
+- Reps:
+    - Github Peter-Kang:
+        href: https://github.com/{{HOMEPAGE_VAR_GITHUB_USERNAME}}
+        icon: github.svg
+        widget:
+        # optional, use tailwind height classes, see https://tailwindcss.com/docs/height
+            type: iframe
+            classes: h-56
+            name: {{HOMEPAGE_VAR_GITHUB_USERNAME}}
+            src: https://pkang.dev/GithubContributionDotMatrix/?username={{HOMEPAGE_VAR_GITHUB_USERNAME}}
+    - LeetCode Peter-Kang:
+        href: https://leetcode.com/u/{{HOMEPAGE_VAR_LEETCODE_USERNAME}}
+        icon: https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png
+        widget:
+            type: iframe
+            classes: h-64
+            name: {{HOMEPAGE_VAR_LEETCODE_USERNAME}}
+            src: https://pkang.dev/LeetCodeCal/?username={{HOMEPAGE_VAR_LEETCODE_USERNAME}}
+
+- Self Hosted:
+    - PiHole:
+        icon: pi-hole.svg # icons found here https://github.com/walkxcode/dashboard-icons
+        href: {{HOMEPAGE_VAR_PI_URL_ADMIN}}
+        target: _blank
+        description: Pihole on a Diet
+        widget:
+            type: pihole
+            url: {{HOMEPAGE_VAR_PI_URL}}
+            key: {{HOMEPAGE_VAR_PI_HOLE_KEY}}
+            # <--- updated with API key from PiHole
+    - Portainer:
+        icon: portainer.svg
+        target: _self
+        href: {{HOMEPAGE_VAR_PORTAINER_URL}}
+        description: Containers
+        widget:
+            type: portainer
+            url: {{HOMEPAGE_VAR_PORTAINER_URL}}
+            env: 2
+            key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
+    - Oak Speed:
+        icon: myspeed.svg
+        target: _self
+        href: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
+        description: Speed Test
+        widget:
+            type: myspeed
+            url: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
+    - Jellyfin:
+        icon: jellyfin.svg
+        description: Watch
+        target: _self
+        href: {{HOMEPAGE_VAR_JELLYFIN_URL}}
+        widget:
+            type: jellyfin
+            url: {{HOMEPAGE_VAR_JELLYFIN_URL}}
+            key: {{HOMEPAGE_VAR_JELLYFIN_KEY}}
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true
+            enableUser: true # optional, defaults to false
+            showEpisodeNumber: true # optional, defaults to false
+            expandOneStreamToTwoRows: false # optional, defaults to true
+    - Kavita:
+        icon: kavita.svg
+        description: Read
+        href: {{HOMEPAGE_VAR_KAVITA_URL}}
+        widget:
+            type: kavita
+            url: {{HOMEPAGE_VAR_KAVITA_URL}}
+            username: {{HOMEPAGE_VAR_KAVITA_USERNAME}}
+            password: {{HOMEPAGE_VAR_KAVITA_PASSWORD}}
+
+    - Asus:
+        icon: asus.svg
+        description: Network
+        href: {{HOMEPAGE_VAR_ASUS_URL}}

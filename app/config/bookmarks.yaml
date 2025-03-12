@@ -1,0 +1,60 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Developer:
+    - Github:
+        - abbr: GH
+          icon: github.svg
+          href: https://github.com/
+    - LeetCode:
+        - abbr: LC
+          icon: https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png 
+          href: https://leetcode.com/u/Peter-Kang/
+    - HackerNews:
+        - abbr: YC
+          icon: https://static-00.iconduck.com/assets.00/ycombinator-icon-2048x2048-w74to9iq.png
+          href: https://news.ycombinator.com
+
+- Social:
+    - Reddit:
+        - abbr: RE
+          icon: reddit.svg
+          href: https://reddit.com/
+    - Instagram:
+        - abbr: IG
+          icon: instagram.svg
+          href: https://instagram.com
+    - Gmail:
+        - abbr: GM
+          icon: gmail.svg
+          href: https://mail.google.com/mail/u/0/#inbox
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          icon: youtube.png
+          href: https://youtube.com/
+    - Hulu:
+        - abbr: H
+          icon: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/hulu-icon.png
+          href: https://hulu.com/
+    - HBO Max:
+        - abbr: HBO
+          icon: https://cdn2.steamgriddb.com/icon/590fcadab00abacc5caaf30b51e91ad3/24/512x512.png
+          href: https://max.com/
+    - Disney Plus:
+        - abbr: D+
+          icon: disney-plus.svg
+          href: https://www.disneyplus.com/home
+    - SWCityStreaming:
+      - abbr: sw
+        href: https://www.twitch.tv/swcitystreaming
+          
+- League:
+    - NA OP GG:
+        - abbr: OP
+          href: https://www.op.gg/summoners/na/peterchan-NA1
+    - League of Graphs:
+        - abbr: LOG
+          href: https://www.leagueofgraphs.com/summoner/na/peterchan-NA1

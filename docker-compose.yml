@@ -1,0 +1,11 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: always
+    env_file: .env
+    ports:
+      - 3000:3000
+    volumes:
+      - ${CONFIG_LOCATION}:/app/config # Make sure your local config directory exists
+      #- /Desktop/Homepage/var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
