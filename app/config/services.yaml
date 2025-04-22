@@ -69,6 +69,7 @@
         widget:
             type: pihole
             url: {{HOMEPAGE_VAR_PI_URL}}
+            version: {{HOMEPAGE_VAR_PI_VERSION}}
             key: {{HOMEPAGE_VAR_PI_HOLE_KEY}}
             # <--- updated with API key from PiHole
     - Portainer:
