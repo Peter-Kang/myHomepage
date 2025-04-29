@@ -15,6 +15,9 @@
         - abbr: YC
           icon: https://static-00.iconduck.com/assets.00/ycombinator-icon-2048x2048-w74to9iq.png
           href: https://news.ycombinator.com
+    - Bookstack:
+        - abbr: B
+          href: {{HOMEPAGE_VAR_BOOKSTACK_URL}}
 
 - Social:
     - Reddit:
