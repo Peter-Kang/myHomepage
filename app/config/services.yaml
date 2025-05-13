@@ -80,16 +80,16 @@
         widget:
             type: portainer
             url: {{HOMEPAGE_VAR_PORTAINER_URL}}
-            env: 2
+            env: 3
             key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
-    - Oak Speed:
-        icon: myspeed.svg
-        target: _self
-        href: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
-        description: Speed Test
-        widget:
-            type: myspeed
-            url: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
+#    - Oak Speed:
+#        icon: myspeed.svg
+#        target: _self
+#        href: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
+#        description: Speed Test
+#        widget:
+#            type: myspeed
+#            url: {{HOMEPAGE_VAR_SPEED_TEST_URL}}
     - Jellyfin:
         icon: jellyfin.svg
         description: Watch
