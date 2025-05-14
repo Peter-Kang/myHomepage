@@ -80,7 +80,7 @@
         widget:
             type: portainer
             url: {{HOMEPAGE_VAR_PORTAINER_URL}}
-            env: 3
+            env: {{HOMEPAGE_VAR_PORTAINER_ENV}}
             key: {{HOMEPAGE_VAR_PORTAINER_KEY}}
 #    - Oak Speed:
 #        icon: myspeed.svg
