@@ -75,7 +75,7 @@
     - Portainer:
         icon: portainer.svg
         target: _self
-        href: {{HOMEPAGE_VAR_PORTAINER_URL}}
+        href: {{HOMEPAGE_VAR_PORTAINER_URL_DNS_NAME}}
         description: Containers
         widget:
             type: portainer
@@ -94,7 +94,7 @@
         icon: jellyfin.svg
         description: Watch
         target: _self
-        href: {{HOMEPAGE_VAR_JELLYFIN_URL}}
+        href: {{HOMEPAGE_VAR_JELLYFIN_URL_NAME}}
         widget:
             type: jellyfin
             url: {{HOMEPAGE_VAR_JELLYFIN_URL}}
