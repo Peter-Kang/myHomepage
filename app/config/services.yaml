@@ -51,15 +51,7 @@
             classes: h-56
             name: {{HOMEPAGE_VAR_GITHUB_USERNAME}}
             src: https://pkang.dev/GithubContributionDotMatrix/?username={{HOMEPAGE_VAR_GITHUB_USERNAME}}
-    - LeetCode Peter-Kang:
-        href: https://leetcode.com/u/{{HOMEPAGE_VAR_LEETCODE_USERNAME}}
-        icon: https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png
-        widget:
-            type: iframe
-            classes: h-64
-            name: {{HOMEPAGE_VAR_LEETCODE_USERNAME}}
-            src: https://pkang.dev/LeetCodeCal/?username={{HOMEPAGE_VAR_LEETCODE_USERNAME}}
-
+    
 - Self Hosted:
     - PiHole:
         icon: pi-hole.svg # icons found here https://github.com/walkxcode/dashboard-icons
